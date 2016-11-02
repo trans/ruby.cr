@@ -1,12 +1,13 @@
-# ruby.cr
+# RUBY.CR
 
-Extra Ruby compatability for Crystal. 
+*Ruby compatibility layer for Crystal*
 
-Ruby.cr facilitates porting Ruby code to Crystal. There are numersous minor
-differences between Ruby's and Crystal's API. These are often a source of
-tedium when trying to get a Ruby program to compile under Crystal. This project
-removes as many as those as possible, while making it easy to methodically
-"crystalize" a program bit by bit, at the coder's liesure.
+Ruby.cr facilitates porting Ruby code to Crystal. There are numerous minor
+differences between Ruby's and Crystal's APIs. These are often a source of
+tedium when trying to get a a port of a Ruby program to compile under Crystal.
+The intent of this project is to remove as many as these minor distinctions
+as possible, while making it easy to methodically *crystallize* a program,
+bit by bit, at the coder's leisure.
 
 
 ## Installation
@@ -15,14 +16,14 @@ Add this to your application's `shard.yml`:
 
 ```yaml
 dependencies:
-  ruby.cr:
+  ruby:
     github: trans/ruby.cr
 ```
 
 
 ## Usage
 
-You can load the entire kit-and-kaboodle using `ruby.cr`.
+You can load the entire kit-and-caboodle using `ruby.cr`.
 
 ```crystal
 require "ruby"
@@ -40,7 +41,7 @@ All the way down to the method.
 require "ruby/enumerable/include"
 ```
 
-This grainularity allows you to port Ruby code and convert it to idiomatic
+This granularity allows you to port Ruby code and convert it to idiomatic
 Crystal bit by bit at your own pace. The general approach is to start
 with `require "ruby"`, then replace that with the contents of `ruby.cr`.
 Then remove one (or a few) lines at a time and recompile, fixing any errors
@@ -65,7 +66,7 @@ The usual good practice:
 Contributors, do not forget to add your file to the `ruby.cr` file!
 It does not use the `/*` trick. This way it provides an easy resource
 for developers to copy when they are ready to eliminate the Ruby
-idoms from their code.
+idioms from their code.
 
 
 ## Contributors
