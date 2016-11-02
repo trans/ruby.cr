@@ -4,7 +4,7 @@
 
 Ruby.cr facilitates porting Ruby code to Crystal. There are numerous minor
 differences between Ruby's and Crystal's APIs. These are often a source of
-tedium when trying to get a a port of a Ruby program to compile under Crystal.
+tedium when trying to get a port of a Ruby program to compile under Crystal.
 The intent of this project is to remove as many as these minor distinctions
 as possible, while making it easy to methodically *crystallize* a program,
 bit by bit, at the coder's leisure.
@@ -43,7 +43,8 @@ require "ruby/enumerable/include"
 
 This granularity allows you to port Ruby code and convert it to idiomatic
 Crystal bit by bit at your own pace. The general approach is to start
-with `require "ruby"`, then replace that with the contents of `ruby.cr`.
+with `require "ruby"`, then replace that with the contents of
+[ruby.cr](https://github.com/trans/ruby.cr/blob/master/src/ruby.cr).
 Then remove one (or a few) lines at a time and recompile, fixing any errors
 as they arise.
 
@@ -71,5 +72,5 @@ idioms from their code.
 
 ## Contributors
 
-- [trans](https://github.com/trans) trans - creator, maintainer
+- [trans](https://github.com/trans) - creator, maintainer
 
